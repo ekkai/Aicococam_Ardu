@@ -17,49 +17,11 @@ You can find more information about cococam through the link below.
 
 ## ~
 
-## 기본 사용법(Basic usage)
-
-```blocks
-    Aicococam.initI2c()
-    Aicococam.initMode(protocolAlgorithm.ALGORITHM_FACE_RECOGNITION)
-```
-
-* 코코캠은 ``||I2C통신||`` 을 사용해 Makecode와 통신합니다.
-* Ai COCOCAM communicates with Makecode using ``||I2C Communication||``
-　
- 
-
-* ``||모드 설정||`` 을 통해 코코캠의 모드를 블록으로 변경할 수 있습니다.
-* You can change the mode of the Ai COCOCAM using block on makecode
-
-
-
-```blocks
-    serial.redirectToUSB()
-    Aicococam.initI2c()
-    Aicococam.initMode(protocolAlgorithm.ALGORITHM_FACE_RECOGNITION)
-```
-* 코코캠은 ``||시리얼통신||`` 을 사용해 컴퓨터에 결과를 전달할 수 있습니다.
-* Ai COCOCAM can use ``||Serial Communication||`` to deliver results to the computer.
-
-
-```blocks
-    basic.forever(function () {
-        Aicococam.request()
-        if (Aicococam.isLearned(1)) {
-            serial.writeString("1")
-        } else {
-            serial.writeString("2")
-        }
-    })
-```
-* ID1이 검출되면 컴퓨터로 "1"을 전달하고 검출되지 않았다면 "2"를 전달합니다.
-* If ID1 is detected, deliver "1" to the computer and "2" if not detected.
-
 
 ## 지원제품(Supported targets)
 
-* for PXT/microbit
+* arduino
+* microbit
 
 ## 라이선스(License)
 
