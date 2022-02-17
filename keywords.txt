@@ -1,0 +1,27 @@
+#######################################
+# Syntax Coloring Map For COCOCAM
+#######################################
+# Library (KEYWORD1)
+#######################################
+
+COCOCAM	KEYWORD1	COCOCAM
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+cococamResult	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+ALGORITHM_FACE_RECOGNITION		LITERAL1
+ALGORITHM_OBJECT_TRACKING		LITERAL1
+ALGORITHM_OBJECT_RECOGNITION		LITERAL1
+ALGORITHM_LINE_TRACKING		LITERAL1
+ALGORITHM_COLOR_RECOGNITION		LITERAL1
+ALGORITHM_TAG_RECOGNITION		LITERAL1
+ALGORITHM_OBJECT_CLASSIFICATION	LITERAL1
+ALGORITHM_MASK_RECOGNITION		LITERAL1
+ALGORITHM_DIGIT_RECOGNITION		LITERAL1
